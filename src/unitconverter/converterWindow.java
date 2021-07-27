@@ -54,6 +54,7 @@ public class converterWindow
         //Set Title
         window.setTitle("Units Converter");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        
+        window.pack();
+        window.setVisible(true);
     }
 }
