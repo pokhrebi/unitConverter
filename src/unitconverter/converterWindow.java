@@ -37,5 +37,15 @@ public class converterWindow
         container = new JPanel();
         FlowLayout f1 = new FlowLayout();
         container.setLayout(f1);
+        
+        //Add user UI elements
+        
+        container.add(farenheitLabel);
+        container.add(farenheitTF);
+        container.add(celsiusLabel);
+        container.add(celsiusTF);
+        container.add (convertBtn);
+        
+        
     }
 }
