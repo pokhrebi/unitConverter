@@ -2,6 +2,7 @@
 package unitconverter;
 
 import javax.swing.JButton;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -18,6 +19,10 @@ public class converterWindow
     private JLabel farenheitLabel;
     private JLabel celsiusLabel;
     private JPanel container;
+    private JFrame window;
     
+    public converterWindow ()
+    {
     
+    }
 }
