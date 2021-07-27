@@ -1,6 +1,7 @@
 
 package unitconverter;
 
+import java.awt.FlowLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -21,13 +22,20 @@ public class converterWindow
     private JPanel container;
     private JFrame window;
     
+
     public converterWindow ()
     {
+        //Create UI
         farenheitTF = new JTextField(15);
         celsiusTF = new JTextField(15);
         farenheitLabel = new JLabel("Farenheit: ");
         celsiusLabel = new JLabel("Celsius: ");
         convertBtn = new JButton("Convert");
         
+        //Create Container
+        
+        container = new JPanel();
+        FlowLayout f1 = new FlowLayout();
+        container.setLayout(f1);
     }
 }
