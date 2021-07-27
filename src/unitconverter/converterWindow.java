@@ -28,6 +28,7 @@ public class converterWindow
         //Create UI
         farenheitTF = new JTextField(15);
         celsiusTF = new JTextField(15);
+        celsiusTF.setEditable(false);
         farenheitLabel = new JLabel("Farenheit: ");
         celsiusLabel = new JLabel("Celsius: ");
         convertBtn = new JButton("Convert");
@@ -56,5 +57,6 @@ public class converterWindow
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.pack();
         window.setVisible(true);
+        
     }
 }
