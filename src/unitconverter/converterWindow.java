@@ -23,6 +23,11 @@ public class converterWindow
     
     public converterWindow ()
     {
-    
+        farenheitTF = new JTextField(15);
+        celsiusTF = new JTextField(15);
+        farenheitLabel = new JLabel("Farenheit: ");
+        celsiusLabel = new JLabel("Celsius: ");
+        convertBtn = new JButton("Convert");
+        
     }
 }
