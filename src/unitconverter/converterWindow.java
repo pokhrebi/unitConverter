@@ -32,20 +32,28 @@ public class converterWindow
         celsiusLabel = new JLabel("Celsius: ");
         convertBtn = new JButton("Convert");
         
-        //Create Container
-        
+        //Create Container        
         container = new JPanel();
         FlowLayout f1 = new FlowLayout();
         container.setLayout(f1);
         
-        //Add user UI elements
-        
+        //Add user UI elements        
         container.add(farenheitLabel);
         container.add(farenheitTF);
         container.add(celsiusLabel);
         container.add(celsiusTF);
         container.add (convertBtn);
         
+        
+        //Create window        
+        window = new JFrame();
+        
+        //Container to Window    
+        window.setContentPane(container);
+        
+        //Set Title
+        window.setTitle("Units Converter");
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
     }
 }
