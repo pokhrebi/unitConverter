@@ -24,6 +24,7 @@ public class converterWindow
     private JPanel container;
     private JFrame window;
     
+    
 
     public converterWindow ()
     {
@@ -34,6 +35,9 @@ public class converterWindow
         farenheitLabel = new JLabel("Farenheit: ");
         celsiusLabel = new JLabel("Celsius: ");
         convertBtn = new JButton("Convert");
+        
+        convertButtonListener listener = new convertButtonListener();
+        convertBtn.addActionListener(listener);
         
         //Create Container        
         container = new JPanel();
@@ -62,11 +66,18 @@ public class converterWindow
         
     }
     
-}
-class convertButtonListener implements ActionListener
-{
-    public void actionPerformed (ActionEvent e)
+    class convertButtonListener implements ActionListener
     {
-        
+        public void actionPerformed (ActionEvent e)
+        {
+           String userFarenheit = farenheitTF.getText();
+           double userFarenheitDouble = Double.parseDouble(userFarenheit);
+           double celciusDouble = ((userFarenheitDouble - 32) * (5/9));
+           String celciusString = Double.toString(celciusDouble);
+           
+           celsiusTF.setText(celciusString);
+        }
     }
+    
 }
+
