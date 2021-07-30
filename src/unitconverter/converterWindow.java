@@ -72,7 +72,7 @@ public class converterWindow
         {
            String userFarenheit = farenheitTF.getText();
            double userFarenheitDouble = Double.parseDouble(userFarenheit);
-           double celciusDouble = ((userFarenheitDouble - 32) * (5/9));
+           double celciusDouble = ((5.0 * (userFarenheitDouble - 32.0)) / 9.0);
            String celciusString = Double.toString(celciusDouble);
            
            celsiusTF.setText(celciusString);
